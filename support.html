@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Support</title>
+	<link rel="stylesheet" href="css/support-style.css">
+	<link rel="stylesheet" href="css/jquery.formstyler.css">
+	<!-- <link rel="stylesheet" href="css/jquery.formstyler.theme.css"> -->
+</head>
+<body>
+	<div id="container">
+		<header>
+			<a href="#"><img src="img/logo.png" alt="" class="logo"></a>
+			<button class="login"><h4>Log In Now</h4></button>
+			<div class="title .multiline">
+				<h1>Home of Dentistry</h1>
+				<h3>Denteez was created by dentists for dentistry in order to make the life of everyone involved in dentistry easier.</h3>
+			</div>
+		</header>
+		<main>
+			<div class="block-form">
+				<form method="POST" action="http://504080.com/api/v1/support​" class="form">
+					<div class="input-form">
+						<h4 class="required">Fields marked “*” are required</h4>
+						<label for="enquiry"><h4>Enquiry Type *</h4></label>
+						<select name="enquiry" id="enquiry"></select>
+						<input type="text" name="other-type" id="other-type" placeholder="Other">
+						<label for="name"><h4>Name *</h4></label>
+						<input type="text" name="name" id="name" placeholder="Dentist" required>
+						<div class="name-msg"><h6>Please enter a valid name!</h6></div>
+						<label for="email" id="email"><h4>Email *</h4></label>
+						<input type="email" name="email" id="email" placeholder="rachelm@gmail.com" required>
+						<div class="email-msg"><h6>Please enter a valid email address!</h6></div>
+						<label for=""><h4>Subject *</h4></label>
+						<input type="text" name="subject" id="subject" required>
+						<label for="description"><h4>Description *</h4></label>
+						<h4 class="count">(0/1000)</h4>
+						<textarea name="description" id="description" maxlength="1000" required></textarea>
+
+						<div class="block-photo">
+							<output id="list">
+								<div class="photo">	
+									<input type="file" name="add-img[]" id="add-img" accept="image/jpeg,image/png,image/jpg" multiple>
+
+									<h4>Add photo</h4>
+									<h6>Minimum size of 300x300 jpeg jpg png 5 MB</h6>
+									<h6 class="error-msg">The photo does not meet the requirements</h6>
+								</div>
+							</output>
+						</div>
+					</div>
+					<input type="submit" name="submit" id="submit" value="Submit">
+				</form>
+			</div>
+			<div class="block-about">
+				<h2>About Denteez</h2>
+				<div class="box2 multiline">
+					<p>Why is it always so difficult to find what you are looking for in dentistry? Whether it is the latest advancement in technology or techniques or simply a review or understanding of the vast amount of products? Perhaps finding someone to just fix your broken equipment or simply hiring new staff or looking for that new job?</p>
+				</div>
+				<div class="box2 multiline">
+					<p>Our mission is to give every dental professional the possibility to discuss and share all aspects of their profession, their practice and their business. We aim to make the world of dentistry easy and accessible, so every dental professional can find what they are looking for quickly and easily all in one place.</p>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="copyright"><h6>Denteez Copyright 2015</h6></div>
+			<div class="footer-menu">
+				<ul>
+					<li><a href="#"><h6>Support</h6></a></li>
+					<li><a href="#"><h6>Privacy Policy</h6></a></li>
+					<li><a href="#"><h6>Terms of use</h6></a></li>
+				</ul>
+			</div>
+		</footer>
+	</div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- <script src="js/jquery.formstyler.min.js"></script> -->
+	<script src="js/script-support.js"></script>
+
+</body>
+</html>
